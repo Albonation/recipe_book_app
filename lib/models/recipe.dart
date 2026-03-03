@@ -2,7 +2,7 @@ class Recipe {
   final String name;
   final String imagePath;
   final List<String> ingredients;
-  final String instructions;
+  final List<String> instructions;
   //bool isFavorite;      //grad feature
 
   Recipe({
