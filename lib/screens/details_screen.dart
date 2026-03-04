@@ -16,11 +16,45 @@ class DetailsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //hero image
-            Image.asset(
-              recipe.imagePath,
-              height: 220,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Stack(
+              children: [
+                Image.asset(
+                  recipe.imagePath,
+                  height: 220,
+                  width: double.infinity,
+                  fit: BoxFit.cover,
+                ),
+
+                //gradient overlay
+                Container(
+                  height: 220,
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                      colors: [
+                        Colors.black54,
+                        Colors.transparent,
+                      ],
+                    ),
+                  ),
+                ),
+
+                //title on image
+                Positioned(
+                  bottom: 16,
+                  left: 16,
+                  right: 16,
+                  child: Text(
+                    recipe.name,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
             ),
 
             Padding(
@@ -28,15 +62,6 @@ class DetailsScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  //recipe name
-                  Text(
-                    recipe.name,
-                    style: const TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-
                   const SizedBox(height: 18),
 
                   //ingredients
@@ -48,20 +73,18 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  ...recipe.ingredients.map(
-                        (ingredient) => Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 4),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text('•  '),
-                          Expanded(
-                            child: Text(ingredient),
-                          ),
-                        ],
-                      ),
-                    ),
+                  //display ingredients as chips
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: recipe.ingredients.map((ingredient) {
+                      return Chip(
+                        label: Text(ingredient),
+                        backgroundColor: Colors.green.shade50,
+                      );
+                    }).toList(),
                   ),
+
                   const SizedBox(height: 18),
 
                   //instructions

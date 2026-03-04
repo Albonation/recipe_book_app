@@ -136,7 +136,7 @@ final List<Recipe> recipes = [
     instructions: [
       'Beat eggs in a bowl and season with salt and pepper.',
       'Melt butter in a nonstick skillet over medium heat.',
-      'Add bell peppers and onions and sauté briefly.',
+      'Add bell peppers and onions and saute briefly.',
       'Pour eggs into the skillet.',
       'Sprinkle spinach and cheese over the top.',
       'Fold omelette in half once set and cook until done.',

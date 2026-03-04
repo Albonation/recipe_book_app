@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b004cb6-f546-4b08-8d16-64a07ca31ffd" name="Changes" comment="feat: implement DetailsScreen with ingredients and instructions">
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    <list default="true" id="3b004cb6-f546-4b08-8d16-64a07ca31ffd" name="Changes" comment="feat: add recipe images for home and detail screens">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/recipes_data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/recipes_data.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/details_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/details_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,15 +73,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Flutter.main.dart.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "io.flutter.reload.alreadyRun": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/senor/source/repos/recipe_book_app",
@@ -108,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1772588134770</updated>
-      <workItem from="1772588136272" duration="1901000" />
+      <workItem from="1772588136272" duration="3420000" />
     </task>
     <task id="LOCAL-00001" summary="feat: configure app entry point and Material App">
       <option name="closed" value="true" />
@@ -134,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772589955211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add recipe images for home and detail screens">
+      <option name="closed" value="true" />
+      <created>1772590163292</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1772590163292</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -150,7 +163,8 @@
     <MESSAGE value="feat: configure app entry point and Material App" />
     <MESSAGE value="feat: implement HomeScreen with recipe cards and navigation" />
     <MESSAGE value="feat: implement DetailsScreen with ingredients and instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implement DetailsScreen with ingredients and instructions" />
+    <MESSAGE value="feat: add recipe images for home and detail screens" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add recipe images for home and detail screens" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
